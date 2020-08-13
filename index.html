@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form fillup</title>
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+        
+        form input,
+        select {
+            width: 50vw;
+            margin: 10px;
+        }
+        
+        form>div {
+            margin: 30px;
+        }
+        
+        form .submit {
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            border: 2px solid #ffffff;
+            padding: 4px;
+            font-size: 20px;
+        }
+        
+        .submit:hover {
+            background: rgb(13, 230, 121);
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FORM FILLUP FOR INTERNSHIP</h1>
+    </header>
+    <form class="gform" action="https://script.google.com/macros/s/AKfycby7AOulvtR14tVuaTYSMUTUxm7Wprb4jCuPMO5Hkf4naNxWPpE/exec" method="POST">
+
+        <label for="product_name">Name of product</label>
+        <input type="text" name="product_name" id="product_name" placeholder="add product name" />
+        <label for="category">category</label>
+        <input type="text" name="category" id="category" placeholder="add Category" />
+        <label for="Type">type</label>
+        <input type="text" id="Type" placeholder="add product Type" />
+        <label for="brand">Choose a brand:</label>
+        <select name="brand" id="brand">
+            <option disabled hidden selected>choose one</option>
+          <option value="St. Botanica">St. Botanica</option>
+          <option value="Wow Skin Sciences">Wow Skin Sciences</option>
+          <option value="Plum Goodness">Plum Goodness</option>          
+        </select>
+        <p>Does it have a website?</p>
+        <input type="radio" id="yes" name="website" value="it has a website">
+        <label for="yes"> it has a website</label><br>
+        <input type="radio" id="no" name="website" value="it doesnt have a website">
+        <label for="no">it doesnt have a website</label><br>
+
+        <label for="price">product price</label>
+        <input type="number" name="price" id="price" placeholder="Enter Product price">
+        <label for="discount_price">Discounted price</label>
+        <input type="number" name="discount_price" id="discount_price" placeholder="Enter Discount price">
+
+        <p>IN STOCK?</p>
+        <input type="radio" id="yes" name="In stock?" value="In stock">
+        <label for="yes"> In stock</label><br>
+        <input type="radio" id="no" name="In stock?" value="out of stock">
+        <label for="no">Out of stock</label><br>
+        <div class="nykaa">
+            <span style="background-color:red;color:white;">Nykaa</span><br>
+
+            <label for="NYKAA_SP">CURRENT NYKAA SP</label>
+            <input type="number" name="NYKAA_SP" id="NYKAA_SP"><br>
+            <label for="NYKAA_MRP">CURRENT NYKAA MRP</label>
+            <input type="number" name="NYKAA_MRP" id="NYKAA_MRP"><br>
+            <label for="NYKAA_LINK">CURRENT NYKAA LINK</label>
+            <input type="text" name="NYKAA_LINK" id="NYKAA_LINK">
+
+        </div>
+        <div class="purple">
+            <span style="background-color:purple;color:white;">Purple</span><br>
+
+            <label for="PURPLE_SP">CURRENT PURPLE SP</label>
+            <input type="number" name="PURPLE_SP" id="PURPLE_SP"><br>
+            <label for="PURPLE_MRP">CURRENT PURPLE MRP</label>
+            <input type="number" name="PURPLE_MRP" id="PURPLE_MRP"><br>
+            <label for="PURPLE_LINK">CURRENT PURPLE LINK</label>
+            <input type="text" name="PURPLE_LINK" id="PURPLE_LINK">
+
+        </div>
+        <div class="flipkart">
+            <span style="background-color:yellow;color:black;">FLIPKART</span><br>
+
+            <label for="FLIPKART_SP">CURRENT FLIPKART SP</label>
+            <input type="number" name="FLIPKART_SP" id="FLIPKART_SP"><br>
+            <label for="FLIPKART_MRP">CURRENT FLIPKART MRP</label>
+            <input type="number" name="FLIPKART_MRP" id="FLIPKART_MRP"><br>
+            <label for="FLIPKART_LINK">CURRENT FLIPKART LINK</label>
+            <input type="text" name="FLIPKART_LINK" id="FLIPKART_LINK">
+
+        </div>
+        <div class="amazon">
+            <span style="background-color:rgb(25, 213, 219);color:black;">AMAZON</span><br>
+
+            <label for="AMAZON_SP">CURRENT AMAZON SP</label>
+            <input type="number" name="AMAZON_SP" id="AMAZON_SP"><br>
+            <label for="AMAZON_MRP">CURRENT AMAZON MRP</label>
+            <input type="number" name="AMAZON_MRP" id="AMAZON_MRP"><br>
+            <label for="AMAZON_LINK">CURRENT AMAZON LINK</label>
+            <input type="text" name="AMAZON_LINK" id="AMAZON_LINK">
+
+        </div>
+
+
+        <input type="submit" value="Submit data " class="submit">
+        <div style="display:none " class="thankyou_message ">
+
+        </div>
+
+
+    </form>
+    <script data-cfasync="false " type="text/javascript " src="form-submission-handler.js "></script>
+</body>
+
+</html>
